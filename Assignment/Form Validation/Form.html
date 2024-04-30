@@ -1,0 +1,150 @@
+<html>
+    <title>Forms</title>
+    <head>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div style="border: 1px solid black;" >
+            <form action="" id="form">
+                    
+            <div class="Login" style="border: 1px solid black;text-align: center;font-size: 40px;">
+                Login Form
+            </div>
+            <br>
+            <div class ="content" style="padding: 10px;">
+                Name <!-- NAME field -->
+                <input type="text" placeholder="FirstName" id="fname">
+                <input type="text" placeholder="LastName" id="lname">
+                <br><br>
+                Email <!-- email field -->
+                <input type="email" placeholder="Email">
+                <br><br>
+                Phone Number <!-- phone number field -->
+                <input type="number">
+                <br><br>
+                Password <!-- password field -->
+                <input type="password" placeholder="Password">
+                <br><br>
+                Gender <br><!-- Gender radio button -->
+                <input type="radio" name="gender">
+                Male
+                <br>
+                <input type="radio" name="gender">
+                Female
+                <br>
+                <input type="radio" name ="gender">
+                Not wish to Disclose
+                <br><br>
+                Address: <!-- address text area -->
+                <br>
+                <textarea  id="" cols="30" rows="10"></textarea>
+                <br><br>
+                Date of Birth:
+                <input type="date" name="date of birth">
+                <br><br>
+                Time
+                <input type="time" name="time">
+                <br><br>
+                Languages <br>
+                <input type="checkbox">
+                Tamil
+                <br>
+                <input type="checkbox">
+                English
+                <br>
+                <input type="checkbox">
+                French
+                <br><br>
+                Select your field of Interest : 
+                <select name="Interest">
+                    <option value="music">Music</option>
+                    <option value="cycle">Cycling</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="chess">Chess</option>
+                </select>
+                <br><br>
+                Upload your photo <br>
+                <input type="file" name="file" id="">
+                
+
+                <br><br>
+                <button onclick="gettingInput()" type="button">Submit</button>
+                <button type="reset">Reset</button>
+            </div>    
+            </form>
+        </div>
+
+
+
+
+
+
+        
+        <br><br><br><br><br>
+        <table border="1px" style="visibility: hidden;" id="table">
+            <thead>
+                <th>Section</th>
+                <th>USER DETAILS</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>USERNAME</th>
+                    <td id="fullname"></td>
+                </tr>
+                <tr>
+                <tr>
+                    <th>EMAIL ID</th>
+                    <td><a href="mailto:viswajith.mathialagan@syncfusion.com">viswajith.mathialagan@syncfusion.com</a></td>
+                </tr>
+                <tr>
+                    <th>PHONE NUMBER</th>
+                    <td>98765432123</td>
+                </tr>
+                <tr>
+                    <th>PASSWORD</th>
+                    <td>*******</td>
+                </tr>
+                <tr>
+                    <th>GENDER</th>
+                    <td>MALE</td>
+                </tr>
+                <tr>
+                    <th>CURRENT ADDRESS</th>
+                    <td><address>myaddress</address></td>
+                </tr>
+                <th>DATE OF BIRTH</th>
+                <td>22/10/1999</td>
+                </tr>
+                <tr>
+                    <th>TIME</th>
+                    <td>10:10 AM</td>
+                </tr>
+                <tr>
+                    <th>LANGUAGES</th>
+                    <td>
+                        <ul>
+                            <li>TAMIL</li>
+                            <li>ENGLISH</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>FIELD OF INTEREST</th>
+                    <td>
+                        <ul>
+                            <li>BADMINTON</li>
+                            <li>CRICKET</li>
+                            <li>MUSIC</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>UPLOAD YOU PICTURE</th>
+                    <td>
+                        <img src="images/myPic.jpg" alt="" height="100px" width="100px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
