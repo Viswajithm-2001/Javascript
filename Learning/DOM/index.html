@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <button onclick="buttonClick()">Click me</button>
+    <h2 id="head2">random text</h2>
+    <input type="text" id="text1" placeholder="enter text">
+    <br>
+    <button onclick="getInput()">click</button>
+    <br>
+    <input type="radio" name="val1" value="1" id="rd1">check 1 <br>
+    <input type="radio" name="val1" value="2" id="rd2">check 2 <br>
+    <button onclick="radio()">alert</button>
+    <br><br>
+    <select name="" id="selectbox">
+        <option value="select1">1</option>
+        <option value="select2">2</option>
+        <option value="select3">3</option>
+    </select>
+    <button onclick="dropdown()">click</button>
+    <br><br><br>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+    <button onclick="changeStyling()">change style</button>
+    <br><br><br>
+    <img onmouseover="setNewImg()" onmouseout="setOldImg()" src="images/img4.png" alt="sample image" id="img">
+</body>
+</html>

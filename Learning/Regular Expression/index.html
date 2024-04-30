@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function regexvalidate()
+        {
+            var username = document.getElementById("uname");
+            var regx = /[^0-5]/;
+            if(regx.test(username.value))
+            {
+                //alert("Valid Username");
+                document.getElementById("lbluser").style.visibility = "hidden";
+            }
+            else
+            {
+                alert("Invalid username")
+                document.getElementById("lbluser").style.visibility = "visible";
+            }
+        }
+        function mobileValidate()
+        {
+            var tex = document.getElementById("mobileNumber");
+            var regx = /[0-9]/;
+            if(regx.test(tex.value))
+            {
+                alert("Valid tex");
+                document.getElementById("lbltext").style.visibility = "hidden";
+            }
+            else
+            {
+                alert("Invalid tex")
+                document.getElementById("lbltext").style.visibility = "visible";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="uname" placeholder="user name">
+        <label id="lbluser" style="color: red; font-size: 7px; visibility: hidden;">Invalid Username</label><br>
+        <br>
+        <input type="text" id="mobileNumber" placeholder="Mobile number" on>
+        <label id="lbltext" style="color: red; font-size: 7px; visibility: hidden;">Invalid mobile number</label><br>
+        <button onclick="regexvalidate()" type="button">Submit</button>
+    </form>
+</body>
+</html>
