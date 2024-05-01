@@ -17,42 +17,42 @@
                 <input type="text" placeholder="LastName" id="lname">
                 <br><br>
                 Email <!-- email field -->
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" id="email">
                 <br><br>
                 Phone Number <!-- phone number field -->
-                <input type="number">
+                <input type="text" id="phone">
                 <br><br>
                 Password <!-- password field -->
                 <input type="password" placeholder="Password">
                 <br><br>
                 Gender <br><!-- Gender radio button -->
-                <input type="radio" name="gender">
+                <input type="radio" name="gender" value="Male">
                 Male
                 <br>
-                <input type="radio" name="gender">
+                <input type="radio" name="gender" value="Female">
                 Female
                 <br>
-                <input type="radio" name ="gender">
+                <input type="radio" name ="gender" value="Not wish to disclose">
                 Not wish to Disclose
                 <br><br>
                 Address: <!-- address text area -->
                 <br>
-                <textarea  id="" cols="30" rows="10"></textarea>
+                <textarea  id="address" cols="30" rows="10"></textarea>
                 <br><br>
                 Date of Birth:
-                <input type="date" name="date of birth">
+                <input type="date" name="dob" id="dob">
                 <br><br>
                 Time
-                <input type="time" name="time">
+                <input type="time" id="time" name="time">
                 <br><br>
                 Languages <br>
-                <input type="checkbox">
+                <input type="checkbox" value="Tamil" name="language[]">
                 Tamil
                 <br>
-                <input type="checkbox">
+                <input type="checkbox" value="English" name="language[]">
                 English
                 <br>
-                <input type="checkbox">
+                <input type="checkbox" value="French" name="language[]">
                 French
                 <br><br>
                 Select your field of Interest : 
@@ -94,11 +94,11 @@
                 <tr>
                 <tr>
                     <th>EMAIL ID</th>
-                    <td><a href="mailto:viswajith.mathialagan@syncfusion.com">viswajith.mathialagan@syncfusion.com</a></td>
+                    <td><a href="mailto:viswajith.mathialagan@syncfusion.com" id="emailID">viswajith.mathialagan@syncfusion.com</a></td>
                 </tr>
                 <tr>
                     <th>PHONE NUMBER</th>
-                    <td>98765432123</td>
+                    <td id="phoneNumber">98765432123</td>
                 </tr>
                 <tr>
                     <th>PASSWORD</th>
@@ -106,32 +106,33 @@
                 </tr>
                 <tr>
                     <th>GENDER</th>
-                    <td>MALE</td>
+                    <td id="gender1">MALE</td>
                 </tr>
                 <tr>
                     <th>CURRENT ADDRESS</th>
-                    <td><address>myaddress</address></td>
+                    <td><address id="address1">myaddress</address></td>
                 </tr>
                 <th>DATE OF BIRTH</th>
-                <td>22/10/1999</td>
+                <td id="date">22/10/1999</td>
                 </tr>
                 <tr>
                     <th>TIME</th>
-                    <td>10:10 AM</td>
+                    <td id="time1">10:10 AM</td>
                 </tr>
                 <tr>
                     <th>LANGUAGES</th>
                     <td>
                         <ul>
-                            <li>TAMIL</li>
-                            <li>ENGLISH</li>
+                            <li id="language1"></li>
+                            <li id="language2"></li>
+                            <li id="language3"></li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
                     <th>FIELD OF INTEREST</th>
                     <td>
-                        <ul>
+                        <ul >
                             <li>BADMINTON</li>
                             <li>CRICKET</li>
                             <li>MUSIC</li>
