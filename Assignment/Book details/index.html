@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Detail</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="fullcontent">
+        <div class="header">
+            <img src="images/image.png" alt="syncfusion logo" height="20px"><p>Library Portal</p>
+            <a href="#">Books</a>
+        </div>
+        <div class="content" id="inpcontent">
+            <div class="title">
+                <h2>Add new Book</h2>
+            </div>
+        <div class="form">
+            <div class="labels">
+                <label for="">Category</label>
+                <label for="">Book</label>
+                <label for="">AuthorEmail</label>
+                <label for="">Author Name</label>
+                <label for="">Published</label>
+                <label for="">Price</label></div>
+            <form action="">
+                    <div class="inputs">
+                        <select name="selectval" id="val">
+                            <option value="IT" >IT</option>
+                            <option value="Medical" >Medical</option>
+                            <option value="Arts" >Arts</option>
+                            <option value="Science" >Science</option>
+                            <option value="Economics" >Economics</option>
+                        </select>
+            
+                        <input type="text" name="" id="bookName">
+                        <input type="text" name="" id="authorMailID">
+                        <input type="text" name="" id="authorName">
+                        <input type="text" name="" id="published">
+                        <input type="text" id="price">
+                    </div>
+                
+            </div>
+                
+                
+                <div class="buttons">
+                    <button type="submit" onclick="save()">Save</button>
+                    <button type="reset">Cancel</button>
+                    <button type="button" onclick="show()">Show</button>
+                </div>
+            </form>
+        </div>
+        <div class="outputcontent" id="outcontent" style="display: none;">
+            <div class="title">
+                <h2 id="bookdetails">Book Details</h2>
+            </div>
+            <div class="outcontent">
+                <div class="labels">
+                    <p>Category</p>
+                    <p>Book</p>
+                    <p>Author Email</p>
+                    <p>Author Name</p>
+                    <p>Published</p>
+                    <p>Price</p>
+                </div>
+                <div class="outputvalues">
+                   <p id="categoryOut">IT</p>
+                   <p id="bookOut">C++</p>
+                   <p id="authormailOut">Balaguruswamy</p>
+                   <p id="authornameOut">Balaguruswamy</p>
+                   <p id="publihsedOut">2001</p>
+                   <p id="priceOut">500</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; 2019 - present Syncfusion</p>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>

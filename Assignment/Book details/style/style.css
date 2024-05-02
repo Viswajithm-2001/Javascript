@@ -1,0 +1,92 @@
+body{
+    display: flex;
+}
+.fullcontent{
+    width: 500px;
+    border: 1px solid black;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+
+    font-family: sans-serif;
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin: 0px;
+    align-items: start;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.header a{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+}
+.inputs{
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.labels{
+    display:  flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.inputs input, .inputs select{
+    margin-bottom: 10px;
+}
+.labels label{
+    margin-bottom: 15px;
+}
+form{
+    margin: 0px;
+    border: none;
+}
+.buttons button{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px 20px;
+}
+.footer{
+    margin: 0px;
+    width: 100%;
+    border: 1px solid black;
+}
+.outputcontent{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.outputcontent h2{
+ font-size: medium;
+}
+.outcontent{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    
+}
+.outcontent .labels{
+    margin-right: 50px;
+}
+.outcontent .labels p{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.outcontent p{
+    margin-bottom: 0px;
+}
